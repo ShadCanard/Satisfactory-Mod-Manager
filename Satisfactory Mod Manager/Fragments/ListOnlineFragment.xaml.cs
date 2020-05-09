@@ -1,4 +1,7 @@
-﻿using SMLAPI.Infrastructure;
+﻿using Satisfactory_Mod_Manager.Fragments.ModFragments;
+using Satisfactory_Mod_Manager.Infrastructure;
+using Satisfactory_Mod_Manager.Windows;
+using SMLAPI.Infrastructure;
 using SMM.ClassLibrary.Models;
 using System;
 using System.Collections.Generic;
@@ -47,6 +50,14 @@ namespace Satisfactory_Mod_Manager.Fragments
         private void OnSearchKeyUp(object sender, KeyEventArgs e)
         {
             if(!_init) RefreshListView();
+        }
+
+        private void OnOpenModClick(object sender, MouseButtonEventArgs e)
+        {
+            if (lvMods.SelectedItems.Count == 1)
+            {
+                Instance.GetInstance().GetFragment<MainFragment>().SetMainContent<ViewModFragment>(((Mod)lvMods.SelectedItem).ID);
+            }
         }
     }
 }

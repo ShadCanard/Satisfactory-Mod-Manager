@@ -14,21 +14,31 @@ namespace Satisfactory_Mod_Manager.Infrastructure
     public class SerializerHelper
     {
         /// <summary>
-        /// Loads a file, returns default if file doesn't exist or an error occurs
+        /// Loads an object from a file. Uses FilePath attribute to detect where to load
         /// </summary>
-        /// <typeparam name="T">Class of object to load</typeparam>
-        /// <param name="filePath">File's path</param>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="path"></param>
         /// <returns></returns>
         public static T Load<T>()
         {
+            return Load<T>(typeof(T).GetFilePath());
+        }
+
+        /// <summary>
+        /// Loads an object from a given file
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        public static T Load<T>(string path)
+        {
             //Returns default if no file (Quickest way)
-            if (string.IsNullOrWhiteSpace(typeof(T).GetFilePath()) || !File.Exists(typeof(T).GetFilePath()))
+            if (string.IsNullOrWhiteSpace(path) || !File.Exists(path))
             {
                 return default;
             }
-
             //Open the file's stream in Read Mode
-            using (var sr = new FileStream(typeof(T).GetFilePath(), FileMode.Open,FileAccess.Read))
+            using (var sr = new FileStream(path, FileMode.Open, FileAccess.Read))
             {
                 try
                 {
@@ -40,8 +50,16 @@ namespace Satisfactory_Mod_Manager.Infrastructure
                     //Return default if an error occurs
                     return default;
                 }
-
             }
+        }
+
+        /// <summary>
+        /// Save an object in a file. Uses FilePath attribute to detect where to save
+        /// </summary>
+        /// <param name="toSave"></param>
+        public static void Save(object toSave)
+        {
+            Save(toSave, toSave.GetType().GetFilePath());
         }
 
         /// <summary>
@@ -49,16 +67,15 @@ namespace Satisfactory_Mod_Manager.Infrastructure
         /// </summary>
         /// <param name="toSave">Object to save</param>
         /// <param name="filePath">File's path</param>
-        public static void Save(object toSave)
+        public static void Save(object toSave, string path)
         {
 
-            if(string.IsNullOrWhiteSpace(toSave.GetType().GetFilePath())) return;
-            string filePath = toSave.GetType().GetFilePath();
+            if (string.IsNullOrWhiteSpace(path)) return;
             //If the save directory doesn't exist, create one
-            if (!Directory.Exists(Path.GetDirectoryName(filePath))) Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+            if (!Directory.Exists(Path.GetDirectoryName(path))) Directory.CreateDirectory(Path.GetDirectoryName(path));
 
             //Open the file's stream we need to create in Write Mode
-            using (var sr = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+            using (var sr = new FileStream(path, FileMode.Create, FileAccess.Write))
             {
                 try
                 {

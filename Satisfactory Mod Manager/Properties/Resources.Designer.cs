@@ -70,6 +70,15 @@ namespace Satisfactory_Mod_Manager.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Author.
+        /// </summary>
+        public static string Author {
+            get {
+                return ResourceManager.GetString("Author", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Base Color.
         /// </summary>
         public static string BaseColor {
@@ -84,6 +93,51 @@ namespace Satisfactory_Mod_Manager.Properties {
         public static string DarkMode {
             get {
                 return ResourceManager.GetString("DarkMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Delete.
+        /// </summary>
+        public static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Description.
+        /// </summary>
+        public static string DescriptionTabTitle {
+            get {
+                return ResourceManager.GetString("DescriptionTabTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Download.
+        /// </summary>
+        public static string Download {
+            get {
+                return ResourceManager.GetString("Download", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Downloads.
+        /// </summary>
+        public static string Downloads {
+            get {
+                return ResourceManager.GetString("Downloads", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Back.
+        /// </summary>
+        public static string GoBack {
+            get {
+                return ResourceManager.GetString("GoBack", resourceCulture);
             }
         }
         
@@ -111,6 +165,33 @@ namespace Satisfactory_Mod_Manager.Properties {
         public static string sfBottom {
             get {
                 return ResourceManager.GetString("sfBottom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Update.
+        /// </summary>
+        public static string Update {
+            get {
+                return ResourceManager.GetString("Update", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Versions.
+        /// </summary>
+        public static string VersionsTabTitle {
+            get {
+                return ResourceManager.GetString("VersionsTabTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Views.
+        /// </summary>
+        public static string Views {
+            get {
+                return ResourceManager.GetString("Views", resourceCulture);
             }
         }
     }

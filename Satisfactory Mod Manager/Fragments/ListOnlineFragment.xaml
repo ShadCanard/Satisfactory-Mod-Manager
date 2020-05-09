@@ -25,7 +25,7 @@
                 <ComboBox x:Name="cbOrderBy" Width="150" Margin="10,0" SelectionChanged="OnChangeOrder" />
             </StackPanel>
         </Grid>
-        <ListView x:Name="lvMods" Grid.Row="1" BorderThickness="1">
+        <ListView x:Name="lvMods" Grid.Row="1" BorderThickness="1" MouseDoubleClick="OnOpenModClick">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>

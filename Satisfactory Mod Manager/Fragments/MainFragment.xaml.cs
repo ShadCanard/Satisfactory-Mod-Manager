@@ -1,4 +1,5 @@
-﻿using SMLAPI.Infrastructure;
+﻿using Satisfactory_Mod_Manager.Infrastructure;
+using SMLAPI.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,12 @@ namespace Satisfactory_Mod_Manager.Fragments
         public MainFragment()
         {
             InitializeComponent();
+            SetMainContent<ListOnlineFragment>();
+        }
+
+        public void SetMainContent<T>(params object[] args) where T : UserControl
+        {
+            MainContent.Content = Instance.GetInstance().GetFragment<T>(args);
         }
     }
 }

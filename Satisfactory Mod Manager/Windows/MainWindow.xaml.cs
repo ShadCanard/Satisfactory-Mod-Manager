@@ -1,6 +1,8 @@
 ﻿using MahApps.Metro.Controls;
 using Satisfactory_Mod_Manager.Fragments;
+using Satisfactory_Mod_Manager.Fragments.ModFragments;
 using Satisfactory_Mod_Manager.Infrastructure;
+using SMLAPI.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,10 +27,11 @@ namespace Satisfactory_Mod_Manager.Windows
     {
         public MainWindow()
         {
+            Instance.GetInstance().SetMainWindow(this);
             InitializeComponent();
             var version = Assembly.GetExecutingAssembly().GetName().Version;
             sBarVersion.Content = string.Format(Properties.Resources.sfBottom, Properties.Resources.AppName, version.Major, version.Minor, version.Build, version.Revision);
-            SetMainContent<ListOnlineFragment>();
+            SetMainContent<MainFragment>();
         }
         public void SetMainContent<T>(params object[] args) where T : UserControl
         {

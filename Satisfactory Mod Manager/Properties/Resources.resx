@@ -138,4 +138,40 @@
     <value>Search</value>
     <comment>Type a search in the search bar</comment>
   </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+    <comment>Download a mod</comment>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+    <comment>Update something</comment>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Delete a mod</comment>
+  </data>
+  <data name="GoBack" xml:space="preserve">
+    <value>Back</value>
+    <comment>The user goes back in navigation</comment>
+  </data>
+  <data name="DescriptionTabTitle" xml:space="preserve">
+    <value>Description</value>
+    <comment>Title of the Description Tab</comment>
+  </data>
+  <data name="VersionsTabTitle" xml:space="preserve">
+    <value>Versions</value>
+    <comment>Title of the Versions Tab</comment>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author</value>
+    <comment>Mod Author</comment>
+  </data>
+  <data name="Downloads" xml:space="preserve">
+    <value>Downloads</value>
+    <comment>Mod's number of downloads</comment>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>Views</value>
+    <comment>Mod's Number of views</comment>
+  </data>
 </root>

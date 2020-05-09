@@ -55,6 +55,7 @@
     <Compile Include="Models\BaseViewModel.cs" />
     <Compile Include="Models\ModsViewModel.cs" />
     <Compile Include="Models\ModVersionViewModel.cs" />
+    <Compile Include="Models\ModViewModel.cs" />
     <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

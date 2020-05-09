@@ -47,6 +47,12 @@
     <Reference Include="MahApps.Metro.IconPacks.Material, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0c0d510f9915137a, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.IconPacks.Material.4.0.0\lib\net47\MahApps.Metro.IconPacks.Material.dll</HintPath>
     </Reference>
+    <Reference Include="Markdig, Version=0.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdig.0.18.0\lib\net40\Markdig.dll</HintPath>
+    </Reference>
+    <Reference Include="Markdig.Wpf, Version=0.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdig.Wpf.0.3.1\lib\net452\Markdig.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.3\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
     </Reference>
@@ -87,6 +93,15 @@
     <Compile Include="Fragments\MainFragment.xaml.cs">
       <DependentUpon>MainFragment.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Fragments\ModFragments\DescriptionViewModFragment.xaml.cs">
+      <DependentUpon>DescriptionViewModFragment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\ModFragments\VersionsViewModFragment.xaml.cs">
+      <DependentUpon>VersionsViewModFragment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fragments\ModFragments\ViewModFragment.xaml.cs">
+      <DependentUpon>ViewModFragment.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Fragments\SettingsFragment.xaml.cs">
       <DependentUpon>SettingsFragment.xaml</DependentUpon>
     </Compile>
@@ -97,6 +112,9 @@
     <Compile Include="Infrastructure\Instance.cs" />
     <Compile Include="Infrastructure\Parameters.cs" />
     <Compile Include="Infrastructure\SerializerHelper.cs" />
+    <Compile Include="Models\InstalledMod.cs" />
+    <Compile Include="Models\Profile.cs" />
+    <Compile Include="Repositories\ProfileRepository.cs" />
     <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -133,7 +151,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +159,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Fragments\MainFragment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fragments\ModFragments\DescriptionViewModFragment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fragments\ModFragments\VersionsViewModFragment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fragments\ModFragments\ViewModFragment.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

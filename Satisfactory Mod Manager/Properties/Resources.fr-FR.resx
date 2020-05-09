@@ -135,4 +135,31 @@
   <data name="Search" xml:space="preserve">
     <value>Rechercher</value>
   </data>
+  <data name="Download" xml:space="preserve">
+    <value>Télécharger</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Mise à jour</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="GoBack" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="DescriptionTabTitle" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="VersionsTabTitle" xml:space="preserve">
+    <value>Versions</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>Vues</value>
+  </data>
+  <data name="Downloads" xml:space="preserve">
+    <value>Téléchargements</value>
+  </data>
 </root>

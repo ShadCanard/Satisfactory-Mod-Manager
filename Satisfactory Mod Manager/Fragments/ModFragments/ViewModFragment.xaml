@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Satisfactory_Mod_Manager.Fragments.ModFragments.ViewModFragment"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:prop="clr-namespace:Satisfactory_Mod_Manager.Properties"
+             xmlns:local="clr-namespace:Satisfactory_Mod_Manager.Fragments.ModFragments"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="Retour" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Click="OnReturnToListClick" />
+
+        <!--Title -->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="imgLogo" Width="64" Height="64" Margin="0,0,10,0" VerticalAlignment="Center" Grid.RowSpan="2" />
+            <TextBlock x:Name="txtModName" Text="MOD EXAMPLE" FontSize="32" Margin="5" VerticalAlignment="Center" Grid.Column="1" />
+            <TextBlock x:Name="txtModUndertitle" Text="Author : ShadCanard" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left"  Margin="5,0"/>
+        </Grid>
+
+        <!-- Action Bar -->
+        <Border Grid.Row="2" BorderThickness="1" BorderBrush="{StaticResource MahApps.Brushes.Controls.Border}" Padding="5" Margin="0,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" Grid.Column="2">
+                    <Button x:Name="btnDownload" Content="{x:Static prop:Resources.Download}" Margin="5,0" Click="OnDownloadClick" />
+                    <Button x:Name="btnRemove" Content="{x:Static prop:Resources.Delete}" Margin="5,0" Click="OnRemoveClick" />
+                    <Button x:Name="btnUpdate" Content="{x:Static prop:Resources.Update}" Margin="5,0" Click="OnUpdateClick" />
+                </StackPanel>
+            </Grid>
+        </Border>
+        
+        <!-- Content -->
+
+        <mah:MetroAnimatedSingleRowTabControl Grid.Row="3">
+            <mah:MetroTabItem Header="Description">
+                <UserControl x:Name="DescriptionContent" />
+            </mah:MetroTabItem>
+            <mah:MetroTabItem Header="Versions">
+                <UserControl x:Name="VersionsContent" />
+            </mah:MetroTabItem>
+        </mah:MetroAnimatedSingleRowTabControl>
+    </Grid>
+</UserControl>
