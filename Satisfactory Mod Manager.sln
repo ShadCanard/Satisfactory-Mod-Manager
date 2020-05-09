@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Satisfactory Mod Manager", "Satisfactory Mod Manager\Satisfactory Mod Manager.csproj", "{D25B852E-85F1-4D5C-BF6E-4DC1AF85F1AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LIB", "LIB", "{AE448CEA-B829-4726-92AA-2E1E97FC44FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMLAPI", "LIB\SMLAPI\SMLAPI.csproj", "{B8A58CE8-7A91-4930-820E-542E7D5865CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMM.ClassLibrary", "LIB\SMM.ClassLibrary\SMM.ClassLibrary.csproj", "{433F59FB-D43E-467B-BFF0-5588DF4BE287}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D25B852E-85F1-4D5C-BF6E-4DC1AF85F1AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25B852E-85F1-4D5C-BF6E-4DC1AF85F1AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25B852E-85F1-4D5C-BF6E-4DC1AF85F1AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25B852E-85F1-4D5C-BF6E-4DC1AF85F1AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A58CE8-7A91-4930-820E-542E7D5865CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A58CE8-7A91-4930-820E-542E7D5865CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A58CE8-7A91-4930-820E-542E7D5865CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A58CE8-7A91-4930-820E-542E7D5865CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433F59FB-D43E-467B-BFF0-5588DF4BE287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433F59FB-D43E-467B-BFF0-5588DF4BE287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433F59FB-D43E-467B-BFF0-5588DF4BE287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433F59FB-D43E-467B-BFF0-5588DF4BE287}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8A58CE8-7A91-4930-820E-542E7D5865CE} = {AE448CEA-B829-4726-92AA-2E1E97FC44FE}
+		{433F59FB-D43E-467B-BFF0-5588DF4BE287} = {AE448CEA-B829-4726-92AA-2E1E97FC44FE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08C9641A-EC13-45A9-AA20-0E4A82053FED}
+	EndGlobalSection
+EndGlobal
