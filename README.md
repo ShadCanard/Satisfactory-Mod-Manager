@@ -1,13 +1,16 @@
 # Satisfactory Mod Manager
+![GitHub issues](https://img.shields.io/github/issues/ShadCanard/Satisfactory-Mod-Manager?style=for-the-badge) 
+![GitHub Releases](https://img.shields.io/github/downloads/ShadCanard/Satisfactory-Mod-Manager/latest/total?style=for-the-badge) 
+![GitHub top language](https://img.shields.io/github/languages/top/ShadCanard/Satisfactory-Mod-Manager?style=for-the-badge) 
+![GitHub last commit](https://img.shields.io/github/last-commit/ShadCanard/Satisfactory-Mod-Manager?logo=github&style=for-the-badge)
+![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/ShadCanard/Satisfactory-Mod-Manager/latest?style=for-the-badge)
 
+![Twitter Follow](https://img.shields.io/twitter/follow/ShadCanard?style=for-the-badge&logo=twitter) ![Discord](https://img.shields.io/discord/530798116157259787?label=Discord&logo=discord&style=for-the-badge) ![Twitch Status](https://img.shields.io/twitch/status/ShadCanard?logo=twitch&style=for-the-badge)
 ## Description
 Satisfactory Mod Manager is a mod management software for Satisfactory. It helps people installing and playing with Satisfactory mods. 
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
 ## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+Visuals to come.
 
 ## Installation
 [Download SMM here](about:blank).
